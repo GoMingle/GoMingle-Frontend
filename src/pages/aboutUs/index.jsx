@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { aboutUsOne, aboutUsTwo } from '../../assets';
 
 
