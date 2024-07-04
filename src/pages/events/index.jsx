@@ -1,9 +1,9 @@
+import React from 'react'
 
-
-const Events = () => {
+const index = () => {
   return (
-    <div>Events</div>
+    <div>index</div>
   )
 }
 
-export default Events
+export default index

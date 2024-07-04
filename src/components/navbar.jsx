@@ -4,8 +4,8 @@ import SearchBar from "./searchBar"
 
 const Navbar = () => {
     return (
-        <div className="flex justify-between px-40 py-4 fixed w-full left-0 top-0 bg-white items-center ">
-            <span className="font-extrabold text-2xl ">GoMingle</span>
+        <div className="flex justify-between px-40 py-4 fixed w-full left-0 top-0 bg-white items-center z-20 ">
+            <span className="font-extrabold text-2xl text-[#C738EF] ">GoMingle</span>
             <div className="flex gap-x-16">
                 {
                     K.NAVLINKS.map(
