@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import K from "../constants/data"
-import SearchBar from "./searchBar"
+import SearchBar from "./SearchBar"
+
 
 const Navbar = () => {
     return (
