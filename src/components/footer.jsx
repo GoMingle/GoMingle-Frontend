@@ -1,49 +1,24 @@
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <footer className="bg-[#C738EF] text-white py-8 mt-80">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-          <h3 className="text-xl font-bold mb-4">Event Management App</h3>
-          <p className="text-black">Your one-stop solution for managing <br />all your events seamlessly and efficiently.</p>
+    <footer className="bg-[#C738EF] text-white py-20 mt-60">
+      <div className="container mx-auto text-center">
+        <div className="mb-4">
+          <a href="/" className="text-lg font-bold">GoMingle</a>
         </div>
-        <div className="align-middle">
-          <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-          <ul>
-          <li className="mb-2"><a href="#home" className="text-black hover:text-white">Home</a></li>
-            <li className="mb-2"><a href="#about" className="text-black hover:text-white">About Us</a></li>
-            <li className="mb-2"><a href="#events" className="text-black hover:text-white">Events</a></li>
-            
-          </ul>
+        <div className="mb-4">
+          
+          <Link to="" className="text-sm text-gray-400 hover:text-white mx-2">Home</Link>
+          <Link to="/aboutus" className="text-sm text-gray-400 hover:text-white mx-2">About Us</Link>
+          <Link to="/events" className="text-sm text-gray-400 hover:text-white mx-2">Events</Link>
+          <Link to="/createevents" className="text-sm text-gray-400 hover:text-white mx-2">Create Events</Link>
         </div>
-        <div>
-          <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-          <p className="text-black">123 Event Street, Suite 100</p>
-          <p className="text-black">Event City, EC 12345</p>
-          <p className="text-black">Email: info@eventmanagement.com</p>
-          <div className="mt-4 flex space-x-4">
-            <a href="#" className="text-black hover:text-black">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="text-black hover:text-black">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="text-black hover:text-black">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" className="text-black hover:text-black">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
+        <div className="text-gray-400 text-sm">
+          &copy; {new Date().getFullYear()} GoMingle. All rights reserved.
         </div>
       </div>
-      <div className="mt-8 text-center text-black">
-        &copy; 2024 Event Management App. All rights reserved.
-      </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
 };
- 
 
-export default Footer
+export default Footer;
