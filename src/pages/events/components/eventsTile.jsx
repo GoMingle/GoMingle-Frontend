@@ -1,16 +1,27 @@
-import { MapPinIcon } from "@heroicons/react/24/outline"
+import React from 'react';
+import { FaEdit, FaTrash } from 'react-icons/fa';
 
-const eventsTile = ({image,name}) => {
+const EventsTile = ({ id, title, description, location, date, price, image, onEdit, onDelete }) => {
   return (
-    <div>
-    <img src="" alt="" />
-    <div>
-        <span>{name}</span>
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <div className="p-4">
+        <h3 className="font-bold text-xl mb-2">{title}</h3>
+        <p className="text-gray-700 mb-2">{description}</p>
+        <p className="text-gray-700 mb-2">{location}</p>
+        <p className="text-gray-700 mb-2">{date}</p>
+        <p className="text-gray-700 mb-2">{price}</p>
+        <div className="flex justify-end mt-4">
+          <button onClick={() => onEdit(id)} className="text-black mr-4 bottom right">
+            <FaEdit />
+          </button>
+          <button onClick={() => onDelete(id)} className="text-[#C738EF]">
+            <FaTrash />
+          </button>
+        </div>
+      </div>
     </div>
-    <MapPinIcon/>
-    </div>
-  )
+  );
 }
 
-export default eventsTile
-
+export default EventsTile;
