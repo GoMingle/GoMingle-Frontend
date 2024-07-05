@@ -10,11 +10,11 @@ import Landing from "./pages/landing"
 const router = createBrowserRouter([
   {
     path: '/', element: <RootLayout />, children: [
-      { index: true, element:<Landing/> },
+      { index: true, element: <Landing /> },
       { path: '/aboutus', element: < AboutUs /> },
       { path: '/events', element: < Events /> },
       { path: '/createevents', element: <CreateEvents /> },
-      
+
     ]
   },
 
