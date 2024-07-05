@@ -16,10 +16,6 @@ const K = {
             name: "CreateEvents",
             path: "/"
         },
-        {
-            name: "Profile",
-            path: "/"
-        }
     ]
 }
 
